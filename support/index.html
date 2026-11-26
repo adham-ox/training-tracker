@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Training Tracker</title>
+<meta name="description" content="Help with the Training Tracker browser extension: common problems and how to report one.">
+<style>
+  :root { --page:#f4f3ef; --sheet:#ffffff; --ink:#1b1a17; --ink2:#45433d; --line:#d8d5cb; --soft:#efede6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --page:#151513; --sheet:#1e1e1b; --ink:#f1efe8; --ink2:#c4c1b6; --line:#3a3934; --soft:#262622; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header.top { padding:18px 16px; border-bottom:1px solid var(--line); }
+  header.top a { color:var(--ink); text-decoration:none; font-weight:650; font-size:18px; }
+  main { max-width:760px; margin:24px auto 48px; padding:28px 28px 36px; background:var(--sheet); border:1px solid var(--line); border-radius:12px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-.01em; }
+  h2 { font-size:21px; line-height:1.3; margin:34px 0 8px; padding-top:22px; border-top:1px solid var(--line); }
+  h3 { font-size:17px; margin:20px 0 4px; }
+  p { margin:0 0 14px; }
+  ol, ul { margin:0 0 14px; padding-left:22px; } li { margin-bottom:8px; }
+  .sub { color:var(--ink2); }
+  a { color:var(--ink); }
+  footer { max-width:760px; margin:0 auto 40px; padding:0 16px; color:var(--ink2); font-size:15px; }
+  @media (max-width:640px) { main { margin:0; padding:22px 16px 30px; border-radius:0; border-left:0; border-right:0; } h1 { font-size:26px; } }
+</style>
+</head>
+<body>
+<header class="top"><a href="../">Training Tracker</a></header>
+
+<main>
+  <h1>Support</h1>
+  <p class="sub">Help with Training Tracker, a browser extension for Chrome and Edge that shows who in a department has not done the University's compulsory training, and sends them a reminder.</p>
+
+  <h2>Common problems</h2>
+
+  <h3>The tracker asks me to reconnect its folder</h3>
+  <p>The browser asks again for permission to use a folder after it restarts. Press <b>Reconnect folder</b> and allow it. Nothing has been lost.</p>
+
+  <h3>My import is refused</h3>
+  <p>The tracker checks the file before it saves anything, and says why it refused it. The usual reasons:</p>
+  <ul>
+    <li>one of the seven compulsory courses was not selected in Power BI before the export;</li>
+    <li>the file is for another department, or is a different report;</li>
+    <li>Power BI cut the file off because it was too large. Select only the seven courses and export again.</li>
+  </ul>
+
+  <h3>I cannot send</h3>
+  <p>Sending needs you to sign in with your University account, in Settings › Sending. To send from a shared address, you must already be allowed to send from it in Outlook. Before anything is sent, the tracker lists every address and asks you to type the word <b>send</b>.</p>
+
+  <h3>A colleague and I both use the tracker</h3>
+  <p>Only one person should use a tracker at a time. Keep it in a shared folder, such as your department's SharePoint, and close it when you have finished so a colleague can open it.</p>
+
+  <h3>The tracker says it was saved by a newer version</h3>
+  <p>A colleague has a newer version of Training Tracker. Update yours, then open the tracker again.</p>
+
+  <h2>Reporting a problem</h2>
+  <ol>
+    <li>In the tracker, open <b>Help</b> and choose <b>Report a problem</b>.</li>
+    <li>Say what you were doing and what happened. Do not name people or paste training records.</li>
+    <li>Press <b>Show what will be sent</b> and read it. The tracker hides the names and addresses it knows.</li>
+    <li>Press <b>Copy the report</b>, and paste it into an email to the contact address on the extension's Chrome Web Store page, or to whoever looks after the tracker in your department.</li>
+  </ol>
+  <p>The tracker sends nothing by itself.</p>
+
+  <h2>Your data</h2>
+  <p>Everything the tracker holds is in one file, in the folder your department chose, and in your own browser. The <a href="../privacy/">privacy statement</a> says what is held and for how long.</p>
+</main>
+
+<footer>Built by Adham Tamer, Blavatnik School of Government, University of Oxford. Training Tracker is not an official University of Oxford service.</footer>
+</body>
+</html>
