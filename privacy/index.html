@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy statement · Training Tracker</title>
+<meta name="description" content="What the Training Tracker browser extension holds, where it keeps it, what it contacts and how long it is kept.">
+<style>
+  :root { --page:#f4f3ef; --sheet:#ffffff; --ink:#1b1a17; --ink2:#45433d; --line:#d8d5cb; --soft:#efede6; --link:#1b1a17; }
+  @media (prefers-color-scheme: dark) {
+    :root { --page:#151513; --sheet:#1e1e1b; --ink:#f1efe8; --ink2:#c4c1b6; --line:#3a3934; --soft:#262622; --link:#f1efe8; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header.top { padding:18px 16px; border-bottom:1px solid var(--line); }
+  header.top a { color:var(--ink); text-decoration:none; font-weight:650; font-size:18px; }
+  main { max-width:760px; margin:24px auto 48px; padding:28px 28px 36px; background:var(--sheet); border:1px solid var(--line); border-radius:12px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-.01em; }
+  h2 { font-size:21px; line-height:1.3; margin:34px 0 8px; padding-top:22px; border-top:1px solid var(--line); }
+  p { margin:0 0 14px; }
+  ul { margin:0 0 14px; padding-left:22px; } li { margin-bottom:8px; }
+  .sub { color:var(--ink2); }
+  .lead { font-size:19px; }
+  .box { background:var(--soft); border-radius:10px; padding:14px 18px; margin:18px 0; }
+  .box p:last-child { margin-bottom:0; }
+  a { color:var(--link); }
+  code { font:0.92em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:var(--soft); padding:1px 5px; border-radius:4px; overflow-wrap:anywhere; }
+  .wrap { overflow-x:auto; margin:0 0 14px; }
+  table { width:100%; border-collapse:collapse; min-width:520px; }
+  th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+  th { font-size:15px; color:var(--ink2); font-weight:650; background:var(--soft); }
+  footer { max-width:760px; margin:0 auto 40px; padding:0 16px; color:var(--ink2); font-size:15px; }
+  @media (max-width:640px) { main { margin:0; padding:22px 16px 30px; border-radius:0; border-left:0; border-right:0; } h1 { font-size:26px; } }
+</style>
+</head>
+<body>
+<header class="top"><a href="../">Training Tracker</a></header>
+
+<main>
+  <h1>Privacy statement</h1>
+  <p class="sub">Training Tracker, a browser extension for Chrome and Edge. Last updated 26 November 2026, for version 0.7.</p>
+
+  <p class="lead">Training Tracker keeps its data in a folder that you choose and in your own browser. It contacts only Microsoft's sign-in and your University's email service, and only when you sign in and send reminders from it. The developer receives nothing from it.</p>
+
+  <div class="box">
+    <p>Training Tracker shows who in a University of Oxford department has not done the University's compulsory training, and sends them a reminder. It is not an official University of Oxford service. The department that uses it is responsible for how it uses it and for the data it keeps.</p>
+  </div>
+
+  <h2>What it holds, and where</h2>
+  <div class="wrap">
+  <table>
+    <thead><tr><th scope="col">What</th><th scope="col">Where</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>About the people a department tracks: names, University email addresses, usernames, job titles, employment status and affiliations; a student's programme; the date each person started at the University; their training status and dates for the seven compulsory courses; teams and line managers; a short note, if someone wrote one.</td>
+        <td>One data file, <code>training-tracker.json</code>, in the folder you choose.</td>
+      </tr>
+      <tr>
+        <td>The department's settings: its name, which groups of people it follows, its reminder wording, a log of the reminders sent and a log of changes.</td>
+        <td>The same data file.</td>
+      </tr>
+      <tr>
+        <td>Backup copies of the data file.</td>
+        <td>A <code>backups</code> folder in the same folder.</td>
+      </tr>
+      <tr>
+        <td>The department's logo, if someone added one. It holds no personal data.</td>
+        <td>One image file in the same folder. It is shown only inside the extension.</td>
+      </tr>
+      <tr>
+        <td>Your name and University email address, and which folder the tracker opens.</td>
+        <td>Your browser. Never in the tracker's folder.</td>
+      </tr>
+      <tr>
+        <td>Your sign-in, only if you sign in to send: the tokens Microsoft issued, your name and address.</td>
+        <td>Your browser, on that computer. Never in the tracker's folder, never in an error log, never shown. <b>Sign out</b> removes it.</td>
+      </tr>
+      <tr>
+        <td>An error log: the last 50 errors the tracker met on this computer. The tracker removes the names, email addresses and other details it knows from each one.</td>
+        <td>Your browser. Never sent anywhere. It is shown on Help, where you can clear it.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The University's training report holds many courses. The tracker keeps only the rows for the seven compulsory courses. Rows for any other course are counted and left out: they are never written to the file. People in the report whom the department does not track are never written to the file either.</p>
+  <p>All of this is personal data about the people the department tracks. It belongs to the department. It is only as private as the folder it is kept in: everyone who can open the folder can read it.</p>
+
+  <h2>What it contacts</h2>
+  <p>The extension contacts exactly two places, both Microsoft's, and only when you use sending:</p>
+  <ul>
+    <li><code>login.microsoftonline.com</code>, to sign you in to your University account;</li>
+    <li><code>graph.microsoft.com</code>, your University's email service, to read your name and address and to send each reminder you send.</li>
+  </ul>
+  <p>It blocks every other connection. It has no server of its own, no analytics, no tracking and no code or fonts loaded from elsewhere. It asks for no access to any website. Until you sign in, it contacts nothing at all.</p>
+  <p>When you send, each email goes from your own University mailbox, or a shared address you are allowed to send from, to the person it is for. A copy is saved in your Sent Items. The tracker asks only to send email from your account. It cannot read your email.</p>
+  <p>Before anything is sent, the tracker lists every name and address the emails will go to and asks you to type the word <b>send</b>.</p>
+  <p>To take back the permission you gave, press <b>Sign out</b> in the tracker's settings, and remove the app at <a href="https://myapps.microsoft.com">myapps.microsoft.com</a>. Microsoft lists it there as "Training Compliance Tracker".</p>
+
+  <h2>A note on a person</h2>
+  <p>A department can write one short note on a person, for example why someone is not tracked. It is for the department's own record.</p>
+  <ul>
+    <li>It is shown only on that person's page, to anyone who can open the tracker's folder.</li>
+    <li>It is never put in a reminder, a report, a download or anything copied for support.</li>
+    <li>The tracker asks people to keep notes brief and factual, and not to record health or other sensitive details.</li>
+  </ul>
+
+  <h2>Reporting a problem</h2>
+  <p>On Help, a person can describe a problem and copy a report. The tracker shows the whole report first. It holds the person's own words, with the names and addresses the tracker knows replaced by "[hidden]", and technical details such as the version and counts. It never holds a name, a course, a team, a note or any figure about anyone's training.</p>
+  <p>The tracker sends nothing. The person pastes the report into an email of their own. The tracker never contacts the developer by itself.</p>
+
+  <h2>How long it is kept</h2>
+  <ul>
+    <li><b>History and leavers.</b> The reminder log, the log of changes and people who have left are kept for a period the department chooses: 1, 2 or 3 years. They are then removed automatically at the next import.</li>
+    <li><b>People tracked now</b> and their training records are kept while they are in the University's report.</li>
+    <li><b>Removing a person.</b> A person can be removed at any time. Their records go and their name is blanked in the logs. The tracker then offers to delete the backups that still hold them.</li>
+    <li><b>Backups.</b> Automatic backups older than the chosen period are deleted, and only the newest 20 are kept. Backups you save yourself stay until you delete them.</li>
+    <li><b>In your browser.</b> Your details, the error log and your sign-in stay until you sign out, remove the extension or clear its data.</li>
+  </ul>
+  <p>To remove everything, delete the tracker's folder and remove the extension.</p>
+
+  <h2>Who to ask</h2>
+  <p>If a department tracks you and you want to know what it holds about you, ask that department's data protection lead. The department decides what is kept. The developer holds no copy.</p>
+  <p>Training Tracker was built by Adham Tamer, Blavatnik School of Government, University of Oxford. For questions about the extension itself, use the contact address on its Chrome Web Store page.</p>
+</main>
+
+<footer>Training Tracker is not an official University of Oxford service.</footer>
+</body>
+</html>
